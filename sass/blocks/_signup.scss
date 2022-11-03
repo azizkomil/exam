@@ -1,0 +1,56 @@
+.signup{
+    background-image: url(../images/footer-round1x.png),url(../images/footer-round1x.png),url(../images/footer-full-round1x.png);
+    background-position:bottom 0px left 550px, bottom 0px left 950px, bottom 0px left 1350px;
+    z-index: -1;
+    
+    background-repeat: no-repeat;
+    padding: 65px;
+    background-color: #495567;
+    &__dowload{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &__dowload_title{
+        width: 415px;
+        height: 96px;
+
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+    }
+    &__dowload_link{
+        width: 159px;
+        height: 55px;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .signup__dowload{
+        flex-direction: column;
+    }
+    .signup__dowload_title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .signup__span{
+        display: flex;
+        gap: 20px;
+    }
+    .signup{
+        background-position:bottom 0px left 270px, bottom 0px left 670px, bottom 0px left 1070px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .signup{
+        background-position:
+        bottom 0 left -150px, 
+        bottom 0px right 0px;
+        background-image: url(../images/footer-round1x.png),url(../images/footer-full-round1x.png);
+}
+}
